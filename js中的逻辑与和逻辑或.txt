@@ -1,0 +1,23 @@
+js中的逻辑或逻辑与
+* ||逻辑或
+* &&逻辑与
+* 在条件的判断当中
+* ||逻辑或只有一个条件为真整体就为真
+* &&逻辑与只有所有的条件都为真整体才为真
+* 在赋值表达式中
+* var num=undefined||100 num=100
+* var num=undefined&&100 num=undefined
+* 逻辑或首先看左边的值是真还是假 如果是真num就等于左边的值 如果是假num就等于右边的值
+* 逻辑与首先看左边的值是真还是假 如果是真num就等于右边的值 如果是假num就等于左边的值
+* 特殊说明 当逻辑或和逻辑与共存的时候逻辑与的优先级高于逻辑或
+* 应用：赋值默认值
+* function fn(num1,num2){
+* console.log(num1+num2);
+* }
+* fn(100)
+* //需求如果num2没有传值让num2默认值为0
+* function fn(num1,num2){
+* num2=num2||0;
+* console.log(num1+num2);
+* }
+* fn(100)

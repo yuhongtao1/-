@@ -1,0 +1,4 @@
+arguments函数内置参数接收机制 arguments是一个对象数据类型 有属性值和属性名
+在js非严格模式下（一般情况下都是非严格模式）我们通过arguments修改参数的值会映射到形参变量上相互映射
+* 但是在js严格模式下是独立分开的互不影响“use strict”
+* age=age||this.age
